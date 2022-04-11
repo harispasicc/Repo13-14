@@ -1,0 +1,464 @@
+/* body {
+    padding-right: 150px;
+    padding-left: 150px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.title-gallery {
+    color: red;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.column {
+    float: left;
+    width: 25.00%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.wrappper {
+    font-family: sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+img {
+    opacity: 1;
+    display: block;
+    width: 200px;
+    height: auto;
+    transition: .5s ease;
+}
+
+.content {
+    position: absolute;
+    top: 18%;
+    left: 14%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.content1 {
+    position: absolute;
+    top: 19%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.content2 {
+    position: relative;
+    bottom: 20px;
+    left: 63%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.content3 {
+    position: absolute;
+    top: 35%;
+    left: 76%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.content4 {
+    position: relative;
+    left: 54%;
+    bottom: 15px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.content5 {
+    position: relative;
+    left: 59%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.content6 {
+    position: relative;
+    bottom: 13px;
+    left: 63%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.content7 {
+    position: relative;
+    bottom: 20px;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.content8 {
+    position: relative;
+    bottom: 20px;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.content9 {
+    position: relative;
+    bottom: 20px;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.overlay {
+    opacity: 0;
+}
+
+.wrapper:hover img {
+    opacity: .5;
+}
+
+.wrapper:hover .overlay {
+    opacity: 1;
+} */
+body {
+    padding-right: 100px;
+    padding-left: 150px;
+}
+
+.wrapper-main {
+    margin: 0 20vw;
+}
+
+
+.wrapper-gallery {
+    margin: 0 20vw;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#index-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas:
+        "gallery-p gallery-p gallery-p gallery-p"
+        "gallery-h2 gallery-h2 gallery-h2 gallery-h2"
+        "gallery-h2 gallery-h2 gallery-h2 gallery-h2"
+        "gallery-h2 gallery-h2 gallery-h2 gallery-h2"
+        "img1 img2 img3 img4"
+        "img5 img6 img7 img4"
+        "img8 img6 img9 img10";
+}
+
+#index-gallery .gallery-img {
+    width: 200px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+#index-gallery p {
+    grid-area: gallery-p;
+}
+
+#index-gallery h2 {
+    grid-area: gallery-h2;
+}
+
+#index-gallery .img1 {
+    grid-area: img1;
+    background-image: url("../images/img1.jpg");
+    height: 200px;
+}
+
+#index-gallery .img2 {
+    grid-area: img2;
+    background-image: url("../images/img2.jpg");
+    height: 200px;
+}
+
+#index-gallery .img3 {
+    grid-area: img3;
+    background-image: url("../images/img3.jpg");
+    height: 200px;
+}
+
+#index-gallery .img4 {
+    grid-area: img4;
+    background-image: url("../images/img4.jpg");
+    height: 450px;
+}
+
+#index-gallery .img5 {
+    grid-area: img5;
+    background-image: url("../images/img5.jpg");
+    height: 200px;
+}
+
+#index-gallery .img6 {
+    grid-area: img6;
+    background-image: url("../images/img6.jpg");
+    height: 450px;
+}
+
+#index-gallery .img7 {
+    grid-area: img7;
+    background-image: url("../images/img7.jpg");
+    height: 200px;
+}
+
+#index-gallery .img8 {
+    grid-area: img8;
+    background-image: url("../images/img8.jpg");
+    height: 310px;
+}
+
+#index-gallery .img9 {
+    grid-area: img9;
+    background-image: url("../images/img9.jpg");
+    height: 340px;
+}
+
+#index-gallery .img10 {
+    grid-area: img10;
+    background-image: url("../images/img10.jpg");
+    height: 370px;
+}
+
+.gallery-img div {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-img a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.gallery-img h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.gallery-img div:hover {
+    opacity: 0.5;
+    transition: all ease-in-out 100ms;
+}
+
+.img-window {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.img-window img {
+    max-width: 80vw;
+    max-height: 80vh;
+}
+
+.img-description {
+    text-align: center;
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
